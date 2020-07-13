@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 from flask import Flask, request, jsonify, render_template
 import pickle
+from flask_cors import CORS
 import os
 from pathlib import Path
 
@@ -16,6 +17,7 @@ from pathlib import Path
 # Your API definition
 model = None
 app = Flask(__name__)
+CORS(app)
 
 
 def load_model():
