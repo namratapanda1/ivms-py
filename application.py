@@ -62,4 +62,4 @@ if __name__ == '__main__':
     model = load_model()  # load model at the beginning once only
     print('Model loaded')
     print(model)
-    #app.run(port=5000)
+    app.run(host='0.0.0.0',port=5000)
